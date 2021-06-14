@@ -1,6 +1,7 @@
 <?php
 
 include_once 'autoload.php';
+$pageName='Ajouter Recette';
 include_once 'assets/bootstrapAsset.php';
 session_start();
 include_once 'isAdmin.php';
@@ -80,6 +81,7 @@ var_dump($_POST,$categories,$ingredients,$quantities);
 }
 ?>
 
+</head>
 <body>
 
 <div class="container">

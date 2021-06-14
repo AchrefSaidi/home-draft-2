@@ -1,7 +1,7 @@
 <?php
 
 include_once 'autoload.php';
-include_once 'assets/bootstrapAsset.php';
+
 session_start();
 include_once 'isAdmin.php';
 if (isset($_GET['edit'])) {
@@ -88,11 +88,14 @@ if (isset($_POST['addProduct'])) {
 ?>
 
 <link rel="stylesheet" href="css/adminMain.css">;
-<?php if (isset($_GET['edit'])) { ?>
-  <title>Modifier produit</title>
-<?php } else { ?>
-  <title>Ajouter produit</title>
-<?php } ?>
+<?php if (isset($_GET['edit'])) { 
+  $pageName="Modifier produit";
+} else { 
+  $pageName="Ajouter produit";
+ } 
+ include_once 'assets/bootstrapAsset.php';
+ ?> 
+ 
 </head>
 
 <body>

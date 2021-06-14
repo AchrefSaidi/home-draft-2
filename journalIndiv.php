@@ -1,14 +1,6 @@
 <?php
 session_start();
 
-if (isset($_SESSION['user'])) {
-
-    include_once "navbarCo.php";
-   
-  } else {
-    include_once "navbarDeco.php";
-  }
-  
 include_once 'autoload.php';
 $foodCat=new FoodCategoryRepository();
 
@@ -20,11 +12,21 @@ $food=$foodCat->findOneBy(array('id'=> $catId));
 
 
 $foodAliments=new FoodAlimentRepository();
-$foodOK=$foodAliments->findBy(array('id'=> $catId,'permission',1));
-$foodNOK=$foodAliments->findBy(array('id'=> $catId,'permission',0));
+$foodOK=$foodAliments->findBy(array('catgeoryId'=> $catId,'permission' => 1));
+$foodNOK=$foodAliments->findBy(array('catgeoryId'=> $catId,'permission' => 0));
 
 $pageName=$food['name'];
 include_once 'assets/mainHead.php';
+
+if (isset($_SESSION['user'])) {
+
+    include_once "navbarCo.php";
+   
+  } else {
+    include_once "navbarDeco.php";
+  }
+  
+
 
 ?>
 
