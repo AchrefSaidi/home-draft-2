@@ -1,5 +1,6 @@
 <?php
 
+$pageName = "Ajouter Produit";
 include_once 'autoload.php';
 
 session_start();
