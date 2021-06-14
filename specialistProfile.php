@@ -49,9 +49,8 @@ include_once 'navbarCo.php'?>
         <div class="field" id="profile">
           <img src=<?php echo "data:image/jpeg;base64," . base64_encode($specialist['image']) ?> alt="">
          
-            <h2><?php  echo $specialist["lastName"] .''. $specialist['firstName'] ?></h2>
+            <h2><?php  echo $specialist["lastName"] .' '. $specialist['firstName'] ?></h2>
             
-            <h4>Réseaux Sociaux</h4>
         </div>
 
         <div class="field reveal" id="Apropos">

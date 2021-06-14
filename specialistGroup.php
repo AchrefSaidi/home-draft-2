@@ -26,7 +26,6 @@ if (isset($_SESSION['user'])) {
 <body>
 
 
-<?php include_once 'preloader.php' ?>
 
 
 
@@ -79,7 +78,7 @@ if (isset($_SESSION['user'])) {
       <div class="card__body">
         <img src=<?php echo "data:image/jpeg;base64," . base64_encode($specialist['image']) ?> class="card__img spec">
         
-        <h2 class="card__title spec"><?php echo ($specialist['lastName'] ."". $specialist['firstName'])?></h2>
+        <h2 class="card__title spec"><?php echo ($specialist['lastName'] ." ". $specialist['firstName'])?></h2>
 
         <div class="card__detail">
     

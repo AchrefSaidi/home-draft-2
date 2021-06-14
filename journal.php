@@ -24,8 +24,6 @@ if (isset($_SESSION['user'])) {
 <body>
 
 
-<?php include_once 'preloader.php' ;
-?>
 
 
 <div id="effect" class="wavy titreJournal">

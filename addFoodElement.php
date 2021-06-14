@@ -3,6 +3,9 @@ session_start();
 $pageName="Ajouter Aliment";
 include_once 'assets/bootstrapAsset.php';
 include_once 'autoload.php';
+if($_SESSION['role']=='user'){
+header('Location:404page.php');
+}
 
 $categoryRepo=new FoodCategoryRepository();
 

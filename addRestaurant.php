@@ -5,6 +5,7 @@ include_once 'assets/bootstrapAsset.php';
 session_start();
 
 include_once 'autoload.php';
+include_once 'isAdmin.php';
 
 if(isset($_POST['addRest'])){
 

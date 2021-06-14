@@ -1,5 +1,5 @@
 <?php
-
+$pageName="catalogue Admin";
 include_once 'assets/mainHead.php';
 include_once 'autoload.php';
 session_start();

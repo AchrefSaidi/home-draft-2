@@ -2,6 +2,7 @@
 session_start();
 include_once ("autoload.php");
 
+include_once 'isAdmin.php';
 
 
   if( (isset($_POST['firstName']))  && (isset($_POST['lastName'])) && (isset($_POST['address'])) && (isset($_POST['phoneNumber']))  && (isset($_POST['email'])) && (isset($_POST['profession']))){
@@ -37,8 +38,7 @@ include_once ("autoload.php");
       }
       else {
         header('location:addSpecialist.php');
-      }s
-  
+      }
 
 
 ?>
