@@ -42,7 +42,7 @@ if (isset($_SESSION['user'])) {
 <body>
       </div>
             <br>
-            <h1 class="c4 faded">Titre Des Produits</h1>
+            <h1 class="c4 faded">Produits Laitiers </h1>
             <div class="imgJournal"><img src="<?php echo "data:image/jpeg;base64,".base64_encode($food['image'])."" ?>"></div>
         <div class="rowJournalIndiv">
         <div class="allowed">

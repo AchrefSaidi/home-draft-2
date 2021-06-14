@@ -117,11 +117,6 @@ include_once "assets/mainHead.php";
           <span><?php echo $recette['difficulty'] ?></span>
         </div>
   
-        <div class="detail">
-          <img src="icons/dollar.png" alt="">
-          <span><?php // echo $ingredient->countElement() ?> Minutes</span>
-        </div>
-        
   
       </div>
 

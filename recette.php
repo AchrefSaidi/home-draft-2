@@ -12,12 +12,9 @@ $recipeCatRelRepo = new RecipeCategoryRelRepository();
 $recipeCatRep = new RecipeCategoryRepository();
 if (isset($_POST['filter'])) {
   $recettes = array();
-  echo 'hi';
   $catName = $_POST['category'];
   $recetteCat = $recipeCatRep->findOneBy(array('nom' => $catName));
-  echo $recetteCat['id'];
   $rels = $recipeCatRelRepo->recipeByCat($recetteCat['id']);
-  var_dump($rels);
   foreach ($rels as $rel) {
     $maRecette = $recetteRepo->findOneBy(array('id' => $rel['recipeId']));
     array_push($recettes, $maRecette);
