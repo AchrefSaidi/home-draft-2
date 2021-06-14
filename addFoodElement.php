@@ -1,5 +1,6 @@
 <?php
 session_start();
+$pageName="Ajouter Aliment";
 include_once 'assets/bootstrapAsset.php';
 include_once 'autoload.php';
 if($_SESSION['role']=='user'){
@@ -18,19 +19,13 @@ if(isset($_POST['addFood'])){
 
   $foodRepo=new FoodAlimentRepository();
   $foodRepo->insert(array('name' => $name , 'permission' => $allowed , 'catgeoryId' => $catResult['id'] ));
-
-
-
-
-
-
-
   
 }
 
 
 ?>
 
+</head>
 <body>
 
 
@@ -88,9 +83,9 @@ if(isset($_POST['addFood'])){
 
     
     </div>
-    <input type="radio" name="permission" value="autorisé" style="margin:0 10px 0 10px"><span>Autorisé</span>
+    <input type="radio" name="permission" value="1" style="margin:0 10px 0 10px"><span>Autorisé</span>
 
-    <input type="radio" name="permission" value="non autorisé" style="margin:0 10px 0 10px"><span>Non Autorisé</span>
+    <input type="radio" name="permission" value="0" style="margin:0 10px 0 10px"><span>Non Autorisé</span>
     <br><br>
       
     

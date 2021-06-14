@@ -1,5 +1,5 @@
 <?php 
-
+  $pageName='Liste Admin';
   include_once 'assets/bootstrapAsset.php';
   include_once 'autoload.php';
 
@@ -21,6 +21,7 @@
 
 ?>
 
+</head>
 <body>
   
 

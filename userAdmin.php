@@ -1,5 +1,6 @@
 <?php 
 
+$pageName='Liste Utilisateurs';
   include_once 'assets/bootstrapAsset.php';
   include_once 'autoload.php';
   $userRepo=new UserRepository();
@@ -9,6 +10,7 @@
 
 ?>
 
+</head>
 <body>
 
 

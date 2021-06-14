@@ -1,5 +1,6 @@
 <?php
 session_start();
+$pageName='Ajouter Spécialiste';
 include_once 'assets/bootstrapAsset.php';
 
 include_once 'autoload.php';
@@ -25,7 +26,7 @@ if (isset($_POST['submit'])) {
 
 ?>
 
-<title>Ajouter specialiste</title>
+
 
 <link rel="stylesheet" href="css/adminMain.css">
 </head>

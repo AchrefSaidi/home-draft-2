@@ -2,6 +2,7 @@
 
 $pageName = "Acceuil Admin";
 session_start();
+$pageName='Acceuil Admin';
 include_once 'assets/bootstrapAsset.php';
 if ($_SESSION['role'] == 'user') {
   header('Location:404page.php');
@@ -9,6 +10,10 @@ if ($_SESSION['role'] == 'user') {
 ?>
 <link rel="stylesheet" href="css/adminMain.css">;
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 059e22331ec45ece7c78c5de430db75cd1b7c8c7
 </head>
 
 <body>
@@ -75,9 +80,8 @@ if ($_SESSION['role'] == 'user') {
         <div class="services__btn default"><button class="btn btn1 btnServ">Gérer Le Journal</button></div>
 
         <div class="hidden__options">
-          <div class="services__btn"><a href="journal.php"><button class="btn btn3 don">Journal Alimentaire
-              </button></a></div>
-          <div class="services__btn"><a href="addJournal.php"><button class="btn btn3 don">Ajouter Aliment</button></a></div>
+         
+          <div class="services__btn"><a href="addFoodElement.php"><button class="btn btn3 don">Ajouter Aliment</button></a></div>
 
         </div>
 
